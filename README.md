@@ -50,11 +50,15 @@ Replace your `Recyclerview` with `IndicatorScrollRecyclerView` in xml.
   </tr>
   <tr>
     <td >app:indexScrollPopupBgColor</td>
-    <td >Set bubble background color</td>
+    <td >Change bubble background color</td>
   </tr>
   <tr>
     <td >app:indexScrollPopupTextColor</td>
-    <td >Set bubble text color</td>
+    <td >Change bubble text color</td>
+  </tr>
+  <tr>
+    <td >app:indexScrollTrackColor</td>
+    <td >Change scroll Track color</td>
   </tr>
 </table>
 
@@ -69,6 +73,8 @@ Replace your `Recyclerview` with `IndicatorScrollRecyclerView` in xml.
 ```
 
 Above override method will display first character in bubble.
+
+
 
 
 
