@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SectionIndexRecyclerView.iml" filepath="$PROJECT_DIR$/SectionIndexRecyclerView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sectionindexrecyclerviewlib/sectionindexrecyclerviewlib.iml" filepath="$PROJECT_DIR$/sectionindexrecyclerviewlib/sectionindexrecyclerviewlib.iml" />
     </modules>
   </component>
 </project>
