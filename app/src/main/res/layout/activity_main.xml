@@ -9,10 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginRight="5dp"
-        app:fastScrollAutoHide="false"
-        app:fastScrollAutoHideDelay="1500"
-        app:fastScrollPopupBgColor="@color/colorPrimary"
-        app:fastScrollPopupTextColor="@android:color/white"
-        app:fastScrollPopupTextSize="35"
-        app:fastScrollThumbColor="@color/colorPrimary" />
+        app:indexScrollAutoHide="false"
+        app:indexScrollAutoHideDelay="1500"
+        app:indexScrollPopupBgColor="@color/colorPrimary"
+        app:indexScrollPopupTextColor="@android:color/white"
+        app:indexScrollPopupTextSize="35"
+        app:indexScrollThumbColor="@color/colorAccent" />
 </RelativeLayout>
