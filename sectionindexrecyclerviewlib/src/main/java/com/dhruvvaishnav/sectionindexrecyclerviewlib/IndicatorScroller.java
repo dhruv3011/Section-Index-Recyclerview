@@ -20,7 +20,6 @@ import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 
 
-
 /**
  * Created by dhruv.vaishnav on 23-05-2016.
  */
@@ -78,14 +77,14 @@ public class IndicatorScroller {
         TypedArray typedArray = context.getTheme().obtainStyledAttributes(
                 attrs, R.styleable.IndicatorScrollRecyclerView, 0, 0);
         try {
-            mAutoHideEnabled = typedArray.getBoolean(R.styleable.IndicatorScrollRecyclerView_fastScrollAutoHide, true);
-            mAutoHideDelay = typedArray.getInteger(R.styleable.IndicatorScrollRecyclerView_fastScrollAutoHideDelay, DEFAULT_AUTO_HIDE_DELAY);
+            mAutoHideEnabled = typedArray.getBoolean(R.styleable.IndicatorScrollRecyclerView_indexScrollAutoHide, true);
+            mAutoHideDelay = typedArray.getInteger(R.styleable.IndicatorScrollRecyclerView_indexScrollAutoHideDelay, DEFAULT_AUTO_HIDE_DELAY);
 
-            int trackColor = typedArray.getColor(R.styleable.IndicatorScrollRecyclerView_fastScrollTrackColor, 0x1f000000);
-            int thumbColor = typedArray.getColor(R.styleable.IndicatorScrollRecyclerView_fastScrollThumbColor, 0xff000000);
-            int popupBgColor = typedArray.getColor(R.styleable.IndicatorScrollRecyclerView_fastScrollPopupBgColor, 0xff000000);
-            int popupTextColor = typedArray.getColor(R.styleable.IndicatorScrollRecyclerView_fastScrollPopupTextColor, 0xffffffff);
-            float popupTextSize = typedArray.getFloat(R.styleable.IndicatorScrollRecyclerView_fastScrollPopupTextSize, DEFAULT_TEXT_SIZE);
+            int trackColor = typedArray.getColor(R.styleable.IndicatorScrollRecyclerView_indexScrollTrackColor, 0x1f000000);
+            int thumbColor = typedArray.getColor(R.styleable.IndicatorScrollRecyclerView_indexScrollThumbColor, 0xff000000);
+            int popupBgColor = typedArray.getColor(R.styleable.IndicatorScrollRecyclerView_indexScrollPopupBgColor, 0xff000000);
+            int popupTextColor = typedArray.getColor(R.styleable.IndicatorScrollRecyclerView_indexScrollPopupTextColor, 0xffffffff);
+            float popupTextSize = typedArray.getFloat(R.styleable.IndicatorScrollRecyclerView_indexScrollPopupTextSize, DEFAULT_TEXT_SIZE);
 
             mTrack.setColor(trackColor);
             mThumb.setColor(thumbColor);
@@ -189,7 +188,7 @@ public class IndicatorScroller {
         }
 
         //Background
-        canvas.drawRect(mThumbPosition.x + mOffset.x + 12, mThumbHeight / 2 + mOffset.y, mThumbPosition.x + mOffset.x + mWidth - 7, mRecyclerView.getHeight() + mOffset.y - mThumbHeight / 2, mTrack);
+        canvas.drawRect(mThumbPosition.x + mOffset.x + 5, mThumbHeight / 2 + mOffset.y, mThumbPosition.x + mOffset.x + mWidth - 5, mRecyclerView.getHeight() + mOffset.y - mThumbHeight / 2, mTrack);
 
         //thumb draw Handle
         canvas.drawRect(mThumbPosition.x + mOffset.x, mThumbPosition.y + mOffset.y, mThumbPosition.x + mOffset.x + mWidth, mThumbPosition.y + mOffset.y + mThumbHeight, mThumb);
